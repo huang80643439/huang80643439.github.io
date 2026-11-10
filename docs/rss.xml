@@ -1,5 +1,79 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>煌的博客</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>煌的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 14:32:31 +0000</lastBuildDate><managingEditor>煌的博客</managingEditor><ttl>60</ttl><webMaster>煌的博客</webMaster><item><title>适合小白学的节点搭建方法，OpenVpn一键搭建节点</title><link>https://huang80643439.github.io/post/shi-he-xiao-bai-xue-de-jie-dian-da-jian-fang-fa-%EF%BC%8COpenVpn-yi-jian-da-jian-jie-dian.html</link><description>莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>煌的博客</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>煌的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 14:34:20 +0000</lastBuildDate><managingEditor>煌的博客</managingEditor><ttl>60</ttl><webMaster>煌的博客</webMaster><item><title>最新Reality协议节点搭建号称永不被封的协议 无须域名和证书的Reality协议+Vision流控</title><link>https://huang80643439.github.io/post/zui-xin-Reality-xie-yi-jie-dian-da-jian-hao-cheng-yong-bu-bei-feng-de-xie-yi-%20-wu-xu-yu-ming-he-zheng-shu-de-Reality-xie-yi-%2BVision-liu-kong.html</link><description>一键搭建VPS教程，最新的VLESS Vision和VLESS Reality防止VPS端口封禁
+
+1，一台境外VPS主流系统
+莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
+https://www.lcayun.com/aff/BOWLAKCX
+vult云服按时计费注册链接
+https://www.vultr.com/?ref=9580630
+
+2，下载并安装FinalShell SSH工具
+Windows版下载地址：http://www.hostbuf.com/downloads/finalshell_install.exe
+macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg
+3,搭建 Reality
+安装所需组件
+
+以下为 CentOS 命令
+yum update -y
+yum install curl wget -y
+
+以下为 Debian / Ubuntu 命令
+apt update -y
+apt install curl wget -y
+
+4，X-UI搭建脚本代码
+bash &lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+
+可参考的域名
+这里输入的域名最低标准为：国外网站，支持 TLSv1.3 、H2 、没有被阻断，千万不要写被阻断的网站，注意红框的端口，这里必须添加
+
+Apple
+gateway.icloud.com
+itunes.apple.com
+swdist.apple.com
+swcdn.apple.com
+updates.cdn-apple.com
+mensura.cdn-apple.com
+osxapps.itunes.apple.com
+aod.itunes.apple.com
+
+mozilla
+download-installer.cdn.mozilla.net
+addons.mozilla.org
+
+aws
+s0.awsstatic.com
+d1.awsstatic.com
+images-na.ssl-images-amazon.com
+m.media-amazon.com
+player.live-video.net
+
+其他
+one-piece.com
+lol.secure.dyn.riotcdn.net
+[www.lovelive-anime.jp](http://www.lovelive-anime.jp/)
+[www.nokia.com](http://www.nokia.com/)
+auth.riotgames.com
+xsso.riotgames.com
+csgo.com
+可以使用这个网站
+https://www.ssllabs.com/projects/index.html
+来寻找 TLS1.3 / X25519 / H2 的指向站点
+也可以使用这个网站
+http://web.chacuo.net/netocspstapling
+来查询目标网站是否支持 OCSP Stapling
+
+5，三、各平台客户端
+v2rayNG【需要最新版本】
+
+Windows（v2rayN）：https://github.com/2dust/v2rayN/releases/tag/6.23
+
+Android（v2rayNG）：https://github.com/2dust/v2rayNG/releases/tag/1.8.5
+
+IOS（shadowrocket）：https://apps.apple.com/app/shadowrocket/id932747118
+
+6，放行端口
+放行指令是一样的，只要将端口443为任意端口就可以了。</description><guid isPermaLink="true">https://huang80643439.github.io/post/zui-xin-Reality-xie-yi-jie-dian-da-jian-hao-cheng-yong-bu-bei-feng-de-xie-yi-%20-wu-xu-yu-ming-he-zheng-shu-de-Reality-xie-yi-%2BVision-liu-kong.html</guid><pubDate>Tue, 10 Nov 2026 14:33:51 +0000</pubDate></item><item><title>适合小白学的节点搭建方法，OpenVpn一键搭建节点</title><link>https://huang80643439.github.io/post/shi-he-xiao-bai-xue-de-jie-dian-da-jian-fang-fa-%EF%BC%8COpenVpn-yi-jian-da-jian-jie-dian.html</link><description>莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
 https://www.lcayun.com/aff/BOWLAKCX
 丽莎主机 原生ip 48小时可退
 https://lisahost.com/aff.php?aff=1461
