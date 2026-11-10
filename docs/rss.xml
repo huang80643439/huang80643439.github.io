@@ -1,5 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>煌的博客</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>煌的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 14:35:09 +0000</lastBuildDate><managingEditor>煌的博客</managingEditor><ttl>60</ttl><webMaster>煌的博客</webMaster><item><title>最新 namesilo超便宜域名注册 和cloudflare域名托管解析详细教程</title><link>https://huang80643439.github.io/post/zui-xin-%20namesilo-chao-bian-yi-yu-ming-zhu-ce-%20-he-cloudflare-yu-ming-tuo-guan-jie-xi-xiang-xi-jiao-cheng.html</link><description>域名网址：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>煌的博客</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>煌的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 14:37:09 +0000</lastBuildDate><managingEditor>煌的博客</managingEditor><ttl>60</ttl><webMaster>煌的博客</webMaster><item><title>极光面板一键搭建 管理服务器 多级中转中转服务器节点提速 搭建tk专线 保护ip</title><link>https://huang80643439.github.io/post/ji-guang-mian-ban-yi-jian-da-jian-%20-guan-li-fu-wu-qi-%20-duo-ji-zhong-zhuan-zhong-zhuan-fu-wu-qi-jie-dian-ti-su-%20-da-jian-tk-zhuan-xian-%20-bao-hu-ip.html</link><description>莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
+https://www.lcayun.com/aff/BOWLAKCX
+丽莎主机 原生ip 48小时可退
+https://lisahost.com/aff.php?aff=1461
+六六云服 原生ip 48小时可退
+https://666clouds.com/aff.php?aff=1128
+狗云 便宜
+https://www.dogyun.com/?ref=bage13
+搬瓦工 速度快
+https://bandwagonhost.com/aff.php?aff=75423
+vultr云服按时计费
+https://www.vultr.com/?ref=9580630
+
+极光面板一键搭建
+```bash
+bash &lt;(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)
+```
+xui面板一键搭建
+```bash
+bash &lt;(curl -Ls [https://raw.githubusercontent.com/FranzKafkaYu/x-ui/956bf85bbac978d56c0e319c5fac2d6db7df9564/install.sh)
+```
+
+测速
+https://www.speedtest.net。</description><guid isPermaLink="true">https://huang80643439.github.io/post/ji-guang-mian-ban-yi-jian-da-jian-%20-guan-li-fu-wu-qi-%20-duo-ji-zhong-zhuan-zhong-zhuan-fu-wu-qi-jie-dian-ti-su-%20-da-jian-tk-zhuan-xian-%20-bao-hu-ip.html</guid><pubDate>Tue, 10 Nov 2026 14:36:45 +0000</pubDate></item><item><title>最新 namesilo超便宜域名注册 和cloudflare域名托管解析详细教程</title><link>https://huang80643439.github.io/post/zui-xin-%20namesilo-chao-bian-yi-yu-ming-zhu-ce-%20-he-cloudflare-yu-ming-tuo-guan-jie-xi-xiang-xi-jiao-cheng.html</link><description>域名网址：
 https://www.namesilo.com/
 域名解析：
 [www.cloudflare.com](http://www.cloudflare.com/)
