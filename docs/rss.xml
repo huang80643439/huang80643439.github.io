@@ -1,5 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>煌的博客</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>煌的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 14:38:49 +0000</lastBuildDate><managingEditor>煌的博客</managingEditor><ttl>60</ttl><webMaster>煌的博客</webMaster><item><title>极光面板一键搭建 管理服务器 多级中转中转服务器节点提速 搭建tk专线 保护ip</title><link>https://huang80643439.github.io/post/ji-guang-mian-ban-yi-jian-da-jian-%20-guan-li-fu-wu-qi-%20-duo-ji-zhong-zhuan-zhong-zhuan-fu-wu-qi-jie-dian-ti-su-%20-da-jian-tk-zhuan-xian-%20-bao-hu-ip.html</link><description>莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>科技碎片</title><link>https://huang80643439.github.io</link><description>分享节点搭建教程</description><copyright>科技碎片</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://huang80643439.github.io</link></image><lastBuildDate>Tue, 10 Nov 2026 15:29:16 +0000</lastBuildDate><managingEditor>科技碎片</managingEditor><ttl>60</ttl><webMaster>科技碎片</webMaster><item><title>VPS搭建Reality节点总是被阻断？XHTTP传输协议横空出世！科学上网最新架构，翻墙速度更快更稳定！X25519椭圆曲线加密信息安全有保障！</title><link>https://huang80643439.github.io/post/VPS-da-jian-Reality-jie-dian-zong-shi-bei-zu-duan-%EF%BC%9FXHTTP-chuan-shu-xie-yi-heng-kong-chu-shi-%EF%BC%81-ke-xue-shang-wang-zui-xin-jia-gou-%EF%BC%8C-fan-qiang-su-du-geng-kuai-geng-wen-ding-%EF%BC%81X25519-tuo-yuan-qu-xian-jia-mi-xin-xi-an-quan-you-bao-zhang-%EF%BC%81.html</link><description>一、准备工作
+
+1、准备域名一个，提前在Cloudflare上做好解析
+
+2、VPS一台重置好Dibian系统
+
+3、下载 FinalShell SSH 工具（点击下方链接即可下载）
+Windows 下载：
+https://dl.hostbuf.com/finalshell3/finalshell_windows_x64.exe
+MacOS M芯片下载：
+https://dl.hostbuf.com/finalshell3/finalshell_macos_arm64.pkg
+MacOS intel 芯片下载：
+https://dl.hostbuf.com/finalshell3/finalshell_macos_x64.pkg
+
+4、梦歌自用5年的VPS官网：[【点此进入】](https://666clouds.com/aff.php?aff=209)
+
+PS：由于市面上的VPS厂商很多，大家使用的VPS不可能完全一样，在开始教程前请放行本教程需要使用到的端口，避免按照本教程执行完后面板打不开，或者节点无法连通！
+二、Debian / Ubuntu 系统安装 sudo curl
+```bash
+apt update &amp;&amp; apt install -y sudo curl
+```
+三、安装 BBR 网络拥塞控制
+```bash
+sh -c 'echo 'net.core.default_qdisc=fq' &gt;&gt; /etc/sysctl.conf' &amp;&amp; sh -c 'echo 'net.ipv4.tcp_congestion_control=bbr' &gt;&gt; /etc/sysctl.conf' &amp;&amp; sysctl -p &amp;&amp; lsmod | grep bbr
+```
+四、安装 3X - UI 面板
+```bash
+bash &lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) v3.11.0
+```
+五、面板设置
+
+Xray内核版本设置
+
+需要使用IOS小火箭（Shadowrocket）选择Xray内核版本：v26.7.28
+
+不使用IOS小火箭（Shadowrocket）无视这一步操作
+
+六、入站｜安全
+目标
+`www.apple.com:443`
+SNI
+`www.apple.com`
+最小客户端版本
+1.0.0
+或者
+0.0.0。</description><guid isPermaLink="true">https://huang80643439.github.io/post/VPS-da-jian-Reality-jie-dian-zong-shi-bei-zu-duan-%EF%BC%9FXHTTP-chuan-shu-xie-yi-heng-kong-chu-shi-%EF%BC%81-ke-xue-shang-wang-zui-xin-jia-gou-%EF%BC%8C-fan-qiang-su-du-geng-kuai-geng-wen-ding-%EF%BC%81X25519-tuo-yuan-qu-xian-jia-mi-xin-xi-an-quan-you-bao-zhang-%EF%BC%81.html</guid><pubDate>Tue, 10 Nov 2026 15:06:54 +0000</pubDate></item><item><title>极光面板一键搭建 管理服务器 多级中转中转服务器节点提速 搭建tk专线 保护ip</title><link>https://huang80643439.github.io/post/ji-guang-mian-ban-yi-jian-da-jian-%20-guan-li-fu-wu-qi-%20-duo-ji-zhong-zhuan-zhong-zhuan-fu-wu-qi-jie-dian-ti-su-%20-da-jian-tk-zhuan-xian-%20-bao-hu-ip.html</link><description>莱卡云（性价比高）24小时全额退 3天内按已使用天数折算
 https://www.lcayun.com/aff/BOWLAKCX
 丽莎主机 原生ip 48小时可退
 https://lisahost.com/aff.php?aff=1461
