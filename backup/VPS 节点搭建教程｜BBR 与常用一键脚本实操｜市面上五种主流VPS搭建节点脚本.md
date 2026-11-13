@@ -51,6 +51,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)
 ```
 
+七．部署新版Hiddify面板：
+1. 运行安装命令
+通过 SSH 登录 VPS，在终端执行：
+```bash
+bash <(curl -fsSL https://i.hiddify.com/release)
+```
 
 
 
