@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="Hiddify 是一款开源多协议面板，3 分钟把一台 VPS 变成 169 条抗封锁线路。">
+<meta property="og:title" content="新版 Hiddify 才是抗封锁天花板！一键部署 169 种协议组合，保姆级部署教程">
+<meta property="og:description" content="Hiddify 是一款开源多协议面板，3 分钟把一台 VPS 变成 169 条抗封锁线路。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://huang80643439.github.io/post/xin-ban-%20Hiddify%20-cai-shi-kang-feng-suo-tian-hua-ban-%EF%BC%81-yi-jian-bu-shu-%20169%20-zhong-xie-yi-zu-he-%EF%BC%8C-bao-mu-ji-bu-shu-jiao-cheng.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>新版 Hiddify 才是抗封锁天花板！一键部署 169 种协议组合，保姆级部署教程</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">新版 Hiddify 才是抗封锁天花板！一键部署 169 种协议组合，保姆级部署教程</h1>
+<div class="title-right">
+    <a href="https://huang80643439.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/huang80643439/huang80643439.github.io/issues/15" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>Hiddify 是一款开源多协议面板，3 分钟把一台 VPS 变成 169 条抗封锁线路。这期我从开 VPS、装面板到测速选节点完整实测了一遍，哪个快用哪个。</p>
+<p>Hiddify-Manager 是一个强大而专业的反网络审查工具箱，Hiddify-Manager 面板支持多用户，安装简单，支持超过 20 种协议，包括 Reality 和 Telegram 代理 以绕过网络审查和封锁。它针对中国、俄罗斯和伊朗的网络审查和封锁进行了规避优化，并得到了 Xray 的推荐。总的来说，它是 X-UI 面板的一个绝佳替代品。</p>
+<p>部署服务器最低配置： 1 核 CPU、1GB 内存、10GB 硬盘</p>
+<p>准备一台VPS<br>
+我今天用的 VPS 是征辉云算的，点部署新实例，里面有很多地区的 VPS。如果你经常用 AI 工具或者做跨境电商，对 IP 的要求比较高，建议用美国住宅双 ISP 认证的 IP，美区价格也不贵。</p>
+<p>系统选 Ubuntu，内存 1G，带宽 100M，一个住宅 IP，流量 2048G，算下来 85 元一个月。适合主力节点上网。</p>
+<p>VPS购买：<a href="https://go.czlab.dev/vps" rel="nofollow">https://go.czlab.dev/vps</a></p>
+<p>检测 IP 纯净度<br>
+进 VPS 的面板，里面有 IP 地址和管理员密码。先看一下这个 IP 地址的纯净度：复制 IP，打开 IPIP.la 检测，纯净度非常干净，IP 类型是家宽、原生 IP。这种 IP 比较适合做跨境电商，或者平常作为主力上网环境来用。</p>
+<p>IPIP.la官网：<a href="https://www.ipip.la/" rel="nofollow">https://www.ipip.la/</a></p>
+<p>FinalShell 连接 VPS<br>
+回到 VPS 后台，把管理密码和用户名记下来。接下来用 FinalShell 连接：打开 FinalShell，点文件，做 SSH 连接，名称随便填，主机填 VPS 的 IP，用户名 root，下方输入密码，点确定，双击连接。首次连接有个提示，接受并保存，显示这样子就代表 VPS 已经连接好了。</p>
+<p>FinalShell官网：<a href="https://www.hostbuf.com/" rel="nofollow">https://www.hostbuf.com/</a></p>
+<p>FinalShell夸克网盘：<a href="https://pan.quark.cn/s/534c794fe739" rel="nofollow">https://pan.quark.cn/s/534c794fe739</a></p>
+<p>一键安装 Hiddify 面板<br>
+复制一键安装命令，回到 FinalShell 粘贴、回车，这个过程不用管，它会自动把 Hiddify 面板安装好，等几分钟就行：</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">bash <span class="pl-s"><span class="pl-pds">&lt;(</span>curl https://i.hiddify.com/release<span class="pl-pds">)</span></span></pre></div>
+<p>温馨提示：官方要求全新安装的 Ubuntu 22.04、24.04 或 26.04，20.04 及更早版本装不了；动手前先确认系统版本。</p>
+<p>面板初始设置<br>
+过了几分钟就安装好了，直接回车，会给两串地址。复制第一个地址在浏览器打开，因为地址不是 https，会显示安全提醒，没关系，点高级，再点下方继续前往，就来到设置界面。</p>
+<p>设置中文，下方选 China，点下一步。设一个密码，点下一步。</p>
+<p>接下来添加域名：打开 Cloudflare，找一个域名，添加 DNS 记录，类型 A 记录，名称随便输入，下方 IPv4 填 VPS 的 IP，代理状态关掉，点保存。</p>
+<p>Cloudflare官网：<a href="https://www.cloudflare.com/" rel="nofollow">https://www.cloudflare.com/</a></p>
+<p>Cloudflare——找到域名——添加 DNS 记录——A 记录——名称随便——IPv4 填 VPS 的 IP——代理状态关掉——保存</p>
+<p>复制刚设置的域名，回到面板粘贴；翻到下方，在订阅链接域名处把域名再粘贴一次。下方的伪装站点让它默认。</p>
+<p>温馨提示：伪装站点不能用金融类站点、伊朗站点、需要登录的知名站点，后面的都不要用，默认就好。</p>
+<p>点下一步。</p>
+<p>开启协议<br>
+这里可以开启多个协议，把大部分都勾上；下方的传输协议都是主流安全协议，也都勾上。勾选完点下一步。</p>
+<p>如果你有其他 Hiddify 服务器，可以添加第一个节点；第一次使用没有，不管它，点下一步。点完成，它会重新安装，等安装完毕。</p>
+<p>进入面板<br>
+过一会显示安装完成，会给到两个链接，用下面那个直接带 https 的。复制下来在浏览器打开，输入刚设置的密码登录，关掉提示，进仪表盘。左边有很多功能菜单：用户、管理员、节点、域名、协议等等。</p>
+<p>用户与订阅链接<br>
+点用户，默认会有一个用户。点二维码，这个链接就是订阅链接。复制链接，打开 v2rayN，点配置项，从剪贴板导入，更新。更新完大概导入了169 种协议，端口 80、443 以及各种不同的协议都有。</p>
+<p>v2rayN——配置项——从剪贴板导入——更新</p>
+<p>v2rayN下载：<a href="https://github.com/2dust/v2rayN">https://github.com/2dust/v2rayN</a></p>
+<p>测速选节点<br>
+直接测一下延迟和速度，看不同协议在这个阶段的延迟和速度到底怎么样。测完每个协议后面都有相应的延迟，像 -1 的暂时上不了网，要选后面有数字的。</p>
+<p>选节点优先看速度和协议的安全性。 80端口的协议，明文特征比较明显，容易被精准识别和封锁，所以一定不要选 80 端口的。要选 443 端口，并且是 TLS 再加 Vless 协议，这种比较好。</p>
+<p>按这种方式选，比单个节点选方便很多，一目了然，上百种节点任意选择。</p>
+<p>多用户管理<br>
+回到 Hiddify 后台，要多个用户使用，可以直接点添加用户，为每个用户设置专属节点。比如给张三用一个，名称张三，流量限制一个月 200G，周期每月重置，不累积，套餐时长 30 天，点添加用户，张三的节点就创建好了。</p>
+<p>这对于要做生意的用户很可行：给他一个链接，一个月卖多少钱，直接给订阅链接就行。可以添加多个用户。</p>
+<p>温馨提示：所有用户的总流量上限是 VPS 本身的流量，我这台一个月 2048G，哪怕后台设了 20 个用户节点，总上限也是 2048G，分配给每个用户的时候要有标准，不能超过总流量。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://huang80643439.github.io">科技碎片</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","huang80643439/huang80643439.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
